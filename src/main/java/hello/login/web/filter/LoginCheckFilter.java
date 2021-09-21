@@ -55,10 +55,6 @@ public class LoginCheckFilter implements Filter {
     private boolean isLoginPathCheck(String requestURI) {
         // 내 코드
 //        return Arrays.stream(whiteList).anyMatch(e -> e.equals(requestURI));
-        /**
-         * whiteList에 속하는 것이 true
-         * 로그인이 안되는 것 false
-         */
 //        return !PatternMatchUtils.simpleMatch(whiteList, requestURI); // 강의 영상
         return !PatternMatchUtils.simpleMatch(whiteList, requestURI);
     }
